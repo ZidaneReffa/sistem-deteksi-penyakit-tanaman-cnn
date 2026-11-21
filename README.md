@@ -180,7 +180,7 @@ Agar kolaborasi rapi dan minim konflik:
 | --- | --- |
 | Rina Tisna Nurasih | 60124005 |
 | Nabila Juannita Enas | 60124006 |
-| Zidan Reffa Pratama | 60124026 |
+| Zidan Reffa Pratama | 60124036 |
 | Yusufi Noviati | 60124046 |
 
 ---
