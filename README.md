@@ -73,21 +73,21 @@ Solusi: pengguna cukup memotret daun yang bergejala, lalu sistem mengklasifikasi
 ```
 Foto daun → Validasi foto → Pra-pemrosesan → Model CNN (MobileNetV2) → Prediksi + Rekomendasi → Riwayat
                                                       │
-                                         keyakinan < ambang batas (mis. 70%)
+                                         keyakinan < ambang batas
                                                       ▼
                                              Antrean verifikasi pakar
 ```
 
-**Teknologi** *(sesuaikan dengan yang benar-benar dipakai tim)*:
+**Teknologi**:
 
 | Komponen | Teknologi |
 | --- | --- |
-| Model *deep learning* | MobileNetV2 (*transfer learning*) |
-| Machine learning | Python, TensorFlow / Keras *(atau PyTorch)* |
-| Backend / API | `TODO` (mis. FastAPI / Flask / Laravel) |
-| Frontend | `TODO` (mis. React / Flutter / HTML+JS) |
-| Database | `TODO` (mis. PostgreSQL / MySQL) |
-| Deployment | `TODO` |
+| Model *CNN* MobileNetV2 |
+| Machine learning | Python, TensorFlow / Keras |
+| Backend / API | Laravel |
+| Frontend | Reac |
+| Database | MySQL |
+| Deployment | - |
 
 ---
 
@@ -118,8 +118,6 @@ Menggunakan metode **MoSCoW**:
 
 ## Struktur Repository
 
-> Sesuaikan dengan struktur folder yang sebenarnya.
-
 ```
 .
 ├── docs/            # Dokumen analisis & perancangan (SRS, diagram, dll.)
@@ -135,8 +133,6 @@ Menggunakan metode **MoSCoW**:
 
 ## Cara Menjalankan
 
-> Bagian ini diisi setelah kode tersedia. Contoh kerangka:
-
 ```bash
 # 1. Clone repository
 git clone https://github.com/<username>/<nama-repo>.git
@@ -148,19 +144,15 @@ source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # 3. Jalankan aplikasi
-# TODO: tambahkan perintah menjalankan backend / frontend
 ```
 
 ---
 
 ## Alur Kerja Tim
 
-Agar kolaborasi rapi dan minim konflik:
-
-1. Branch `main` hanya berisi kode yang stabil. **Jangan push langsung ke `main`.**
+1. Branch `main` hanya berisi kode yang stabil.
 2. Buat branch baru untuk setiap tugas, dengan format `tipe/nama-singkat`
-   Contoh: `feature/upload-foto`, `fix/validasi-gambar`, `docs/update-readme`
-3. Tulis pesan commit yang jelas, mis. `feat: tambah validasi ukuran foto`
+3. Tulis pesan commit yang jelas.
 4. Buka **Pull Request** ke `main` dan minta minimal satu anggota lain untuk me-review sebelum *merge*.
 5. Gunakan tab **Issues** untuk membagi tugas dan melacak progres (bisa dihubungkan ke kode FR/NFR, mis. "FR-04: Validasi foto").
 
@@ -168,7 +160,6 @@ Agar kolaborasi rapi dan minim konflik:
 
 ## 📚 Dokumentasi
 
-- [Identifikasi Masalah dan Analisis Kebutuhan Sistem](docs/) *(letakkan file dokumen di folder `docs/` lalu perbarui tautan ini)*
 
 ---
 
@@ -186,5 +177,3 @@ Agar kolaborasi rapi dan minim konflik:
 ---
 
 ## Lisensi
-
-Proyek ini dibuat untuk keperluan akademik. Tentukan lisensi yang sesuai (mis. MIT) bila repository akan dibuka untuk umum.
